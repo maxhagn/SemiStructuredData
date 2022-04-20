@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="buchbestand">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="buch" type="buchType" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element name="bestand" type="bestandType" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	
+		<xs:key name="buchid">
+			<xs:selector xpath="buch"/>
+			<xs:field xpath="@id"/>
+		</xs:key>
+		
+		<xs:keyref name="buchref" refer="buchid">
+			<xs:selector xpath="bestand"/>
+			<xs:field xpath="@buch"/>
+		</xs:keyref>
+	</xs:element>
+	
+	<xs:complexType name="buchType">
+		<xs:sequence>
+			<xs:element name="titel" type="xs:string"/>
+			<xs:element name="autor" type="xs:string"/>
+			<xs:element name="seiten" type="xs:positiveInteger"/>
+			<xs:element name="preis" type="xs:decimal"/>
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:ID" use="required"/>
+		<xs:attribute name="lagernd" type="xs:boolean" use="optional"/>
+		<xs:attribute name="einband" type="xs:string" use="required"/>
+	</xs:complexType>
+	
+	<xs:complexType name="bestandType">
+		<xs:attribute name="buch" type="xs:IDREF" use="required"/>
+		<xs:attribute name="lagernd" type="xs:boolean" use="required"/>
+	</xs:complexType>
+</xs:schema>

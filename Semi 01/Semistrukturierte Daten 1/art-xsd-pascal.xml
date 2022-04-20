@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<art>
+	<artists>
+		<artist aid="DaVinci">
+			<name>Leonardo Da Vinci</name>
+			<lived from="1452-04-15" to="1519-05-02" birthplace="Anchiano"/>
+			<tags>
+				<t>daVinciName</t>
+				<t>daVinciCountry</t>
+			</tags>
+		</artist>
+		<artist aid="Warhol">
+			<name>Andy Warhol</name>
+			<lived from="1928-07-06" to="1987-02-22" birthplace="Pennsylvania"/>
+			<tags>
+				<t>warholName</t>
+				<t>warholArt</t>
+			</tags>
+		</artist>
+		<artist aid="Picasso">
+			<name>Pablo Picasso</name>
+			<lived from="1881-10-25" to="1973-04-08" birthplace="Malaga"/>
+			<tags>
+				<t>picassoName</t>
+				<t>picassoArt</t>
+			</tags>
+		</artist>
+	</artists>
+	
+	<objects>
+		<object>
+			<title>Mona Lisa</title>
+			<kind>
+				<painting paint="Acrylic" on="Paper"/>
+			</kind>
+			<label>
+				The worldfamous <ref aid="DaVinci">Mona Lisa</ref> by <by>Leonardo Da Vinci</by>.
+				It was drawn from <year>1503</year> to <year>1506</year>, and shows the neapolitanian woman Monna Lisa del Giocondo.
+			</label>
+			<catalog>PP-001-a1</catalog>
+			<tags>
+				<t>Portrait</t>
+			</tags>
+		</object>
+		<object>
+			<title>homo vitruvianus</title>
+			<kind>
+				<painting paint="Chalk" on="Paper"/>
+			</kind>
+			<label>
+				homo vitruvianus <by>Leonardo Da Vinci</by>.
+				Created around <year>1490</year>. It shows the idealized proportions of a man.
+			</label>
+			<catalog>PP-002-a2</catalog>
+			<tags>
+				<t>Proportions</t>
+			</tags>
+		</object>
+		<object>
+			<title>Marilyn Diptych</title>
+			<kind>
+				<painting paint="Oil" on="Paper"/>
+			</kind>
+			<label>
+				<ref aid="Warhol">Marilyn Diptych</ref> <by>Andy Warhol</by>.
+				Created in <year>1962</year>. It is a Sevenprint of Marilyn Monroe.
+			</label>
+			<catalog>PP-003-b1</catalog>
+			<tags>
+				<t>Colours</t>
+			</tags>
+		</object>
+		<object>
+			<title>Baboon and Young</title>
+			<kind>
+				<sculpture material="Bronze"/>
+			</kind>
+			<label>
+				Baboon and Young <by>Pablo Picasso</by>.
+				It is a <ref aid="Picasso">bronze sculpture</ref> of a female baboon holding its offspring.
+			</label>
+			<catalog>SC-001-c1</catalog>
+			<tags>
+				<t>Nature</t>
+			</tags>
+		</object>
+		<object>
+			<title>Chicago Picasso</title>
+			<kind>
+				<sculpture material="Bronze"/>
+			</kind>
+			<label>
+				Chicago Picasso <by>Pablo Picasso</by>.
+				The sculpture, dedicated in <year>1967</year>, in Daley Plaza in the Chicago Loop, is 50 feet tall and weighs 162 short tons.
+			</label>
+			<catalog>SC-002-c2</catalog>
+			<tags>
+				<t>Public Art</t>
+			</tags>
+		</object>
+	</objects>
+	
+	<tags>
+		<tag tagname="picassoName">Picasso</tag>
+		<tag tagname="picassoArt">Cubism</tag>
+		<tag tagname="daVinciName">DaVinci</tag>
+		<tag tagname="daVinciCountry">Italia</tag>
+		<tag tagname="warholName">Warhol</tag>
+		<tag tagname="warholArt">Pop Art</tag>
+	</tags>
+</art>

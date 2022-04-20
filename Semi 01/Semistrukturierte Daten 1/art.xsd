@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="art">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="artists" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="artist">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="name" type="xs:string"/>
+                                        <xs:element name="aid" type="xs:positiveInteger"/>
+                                        <xs:element name="seiten" type="xs:positiveInteger"/>
+                                        <xs:element name="preis" type="xs:decimal"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="lagernd" type="xs:boolean" use="required"/>
+                                    <xs:attribute name="einband" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="lived">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="name" type="xs:string"/>
+                                        <xs:element name="autor" type="xs:string"/>
+                                        <xs:element name="seiten" type="xs:positiveInteger"/>
+                                        <xs:element name="preis" type="xs:decimal"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="lagernd" type="xs:boolean" use="required"/>
+                                    <xs:attribute name="einband" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="tags">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="name" type="xs:string"/>
+                                        <xs:element name="autor" type="xs:string"/>
+                                        <xs:element name="seiten" type="xs:positiveInteger"/>
+                                        <xs:element name="preis" type="xs:decimal"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="lagernd" type="xs:boolean" use="required"/>
+                                    <xs:attribute name="einband" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="objects" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="artists" minOccurs="1" maxOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="titel" type="xs:string"/>
+                                        <xs:element name="autor" type="xs:string"/>
+                                        <xs:element name="seiten" type="xs:positiveInteger"/>
+                                        <xs:element name="preis" type="xs:decimal"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="lagernd" type="xs:boolean" use="required"/>
+                                    <xs:attribute name="einband" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="tags" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="artists" minOccurs="1" maxOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="titel" type="xs:string"/>
+                                        <xs:element name="autor" type="xs:string"/>
+                                        <xs:element name="seiten" type="xs:positiveInteger"/>
+                                        <xs:element name="preis" type="xs:decimal"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="lagernd" type="xs:boolean" use="required"/>
+                                    <xs:attribute name="einband" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

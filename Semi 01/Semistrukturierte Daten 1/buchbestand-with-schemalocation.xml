@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buchbestand xsi:noNamespaceSchemaLocation="buchbestand.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<buch einband="Taschenbuch" lagernd="true">
+		<titel>The Adventures of Huckleberry Finn</titel>
+		<autor>Mark Twain</autor>
+		<seiten>336</seiten>
+		<preis>12.75</preis>
+	</buch>
+	<buch einband="Taschenbuch" lagernd="true">
+		<titel>In der Strafkolonie</titel>
+		<autor>Franz Kafka</autor>
+		<seiten>125</seiten>
+		<preis>9.90</preis>
+	</buch>
+	<buch einband="Gebundene Ausgabe" lagernd="false">
+		<titel>Leaves of Grass</titel>
+		<autor>Walt Whitman</autor>
+		<seiten>462</seiten>
+		<preis>25.00</preis>
+	</buch>
+	<buch einband="Taschenbuch" lagernd="false">
+		<titel>The Legend of Sleepy Hollow</titel>
+		<autor>Washington Irving</autor>
+		<seiten>98</seiten>
+		<preis>2.50</preis>
+	</buch>
+	<buch einband="Gebundene Ausgabe" lagernd="true">
+		<titel>Der Graf von Monte Christo</titel>
+		<autor>Alexandre Dumas</autor>
+		<seiten>760</seiten>
+		<preis>19.00</preis>
+	</buch>
+	<buch einband="Gebundene Ausgabe" lagernd="true">
+		<titel>Moby-Dick</titel>
+		<autor>Herman Melville</autor>
+		<seiten>724</seiten>
+		<preis>22.00</preis>
+	</buch>
+	<buch einband="Taschenbuch" lagernd="false">
+		<titel>The Scarlet Letter</titel>
+		<autor>Nathaniel Hawthorne</autor>
+		<seiten>253</seiten>
+		<preis>7.80</preis>
+	</buch>
+	<buch einband="Gebundene Ausgabe" lagernd="true">
+		<titel>Harry Potter und der Stein der Weisen</titel>
+		<autor>J.K. Rowling</autor>
+		<seiten>335</seiten>
+		<preis>12.00</preis>
+	</buch>
+	<buch einband="Taschenbuch" lagernd="true">
+		<titel>Der Prozess</titel>
+		<autor>Franz Kafka</autor>
+		<seiten>217</seiten>
+		<preis>13.80</preis>
+	</buch>
+</buchbestand>

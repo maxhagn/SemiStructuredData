@@ -1,0 +1,41 @@
+<!ELEMENT art (artists,objects,tags)>
+
+
+<!ELEMENT artists (artist)*>
+<!ELEMENT objects (object)+>
+<!ELEMENT tags (t*|tag*)>
+
+
+<!ELEMENT artist (name,lived,tags)>
+<!ATTLIST artist aid ID #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT lived EMPTY>
+<!ATTLIST lived
+  birthplace CDATA #REQUIRED
+  from CDATA #IMPLIED
+  to CDATA #IMPLIED>
+
+
+<!ELEMENT object (title,kind,label,catalog,tags?)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT kind (painting|sculpture)>
+<!ELEMENT painting EMPTY>
+<!ATTLIST painting
+  on CDATA #REQUIRED
+  paint (Oil|Acrylic|Chalk) #REQUIRED>
+<!ELEMENT sculpture EMPTY>
+<!ATTLIST sculpture material CDATA #IMPLIED>
+<!ELEMENT label (#PCDATA|by|ref|year)*>
+<!ELEMENT by (#PCDATA)>
+<!ELEMENT ref (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT catalog (#PCDATA)>
+<!ATTLIST ref
+  t CDATA #IMPLIED
+  aid IDREF #IMPLIED>
+
+
+<!ELEMENT tag (#PCDATA)>
+<!ATTLIST tag tagname ID #REQUIRED>
+<!ELEMENT t EMPTY>
+<!ATTLIST t refT IDREF #REQUIRED>

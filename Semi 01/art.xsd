@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="art">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="artists">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" name="artist">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="name" type="xs:string"/>
+                                        <xs:element name="lived">
+                                            <xs:complexType>
+                                                <xs:attribute name="from" type="xs:date"/>
+                                                <xs:attribute name="to" type="xs:date"/>
+                                                <xs:attribute name="birthplace" type="xs:string"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="tags">
+                                            <xs:complexType>
+                                                <xs:sequence maxOccurs="1">
+                                                  <xs:element maxOccurs="3" minOccurs="0" name="t"
+                                                  type="xs:string"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                            <xs:key name="artistTagKey">
+                                                <xs:selector xpath="./t"/>
+                                                <xs:field xpath="."/>
+                                            </xs:key>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="aid" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="objects">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" minOccurs="3" name="object">
+                                <xs:complexType>
+                                    <xs:all>
+                                        <xs:element name="title" type="xs:string"/>
+                                        <xs:element name="kind">
+                                            <xs:complexType>
+                                                <xs:choice>
+                                                  <xs:element name="painting">
+                                                    <xs:complexType>
+                                                        <xs:attribute name="paint" use="optional">
+                                                            <xs:simpleType>
+                                                                <xs:restriction base="xs:string">
+                                                                  <xs:enumeration value="Oil"/>
+                                                                  <xs:enumeration value="Acrylic"/>
+                                                                  <xs:enumeration value="Chalk"/>
+                                                              </xs:restriction>
+                                                            </xs:simpleType>
+                                                          </xs:attribute>
+                                                          <xs:attribute name="on">
+                                                            <xs:simpleType>
+                                                              <xs:restriction base="xs:string"/>
+                                                            </xs:simpleType>
+                                                          </xs:attribute>
+                                                      </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element name="sculpture">
+                                                    <xs:complexType>
+                                                      <xs:attribute name="material" type="xs:string"/>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:choice>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="label">
+                                            <xs:complexType mixed="true">
+                                                <xs:sequence>
+                                                  <xs:choice maxOccurs="unbounded">
+                                                  <xs:element name="by" type="xs:string"/>
+                                                  <xs:element name="year" type="xs:int"/>
+                                                  <xs:element name="ref" minOccurs="0" maxOccurs="unbounded">
+                                                    <xs:complexType>
+                                                      <xs:simpleContent>
+                                                        <xs:extension base="xs:string">
+                                                          <xs:attribute name="aid" type="xs:string"/>
+                                                          <xs:attribute name="t" type="xs:string"/>
+                                                        </xs:extension>
+                                                      </xs:simpleContent>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                  </xs:choice>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element maxOccurs="1" minOccurs="1" name="catalog">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="([A-Z]){2}-([0-9]){3}-([a-z][0-9]){1}"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="tags">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element maxOccurs="3" minOccurs="0" name="t"
+                                                  type="xs:string"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                            <xs:unique name="objectTagKey">
+                                                <xs:selector xpath="./t"/>
+                                                <xs:field xpath="."/>
+                                            </xs:unique>
+                                        </xs:element>
+                                    </xs:all>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="tags">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" name="tag">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="tagname" type="xs:string"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:all>
+        </xs:complexType>
+        <xs:key name="artistKey">
+            <xs:selector xpath="artists/artist"/>
+            <xs:field xpath="@aid"/>
+        </xs:key>
+        <xs:key name="tagKey">
+            <xs:selector xpath="tags/tag"/>
+            <xs:field xpath="@tagname"/>
+        </xs:key>
+        <xs:key name="objKey">
+            <xs:selector xpath="objects/object"/>
+            <xs:field xpath="title"/>
+            <xs:field xpath="catalog"/>
+        </xs:key>
+        <xs:keyref name="artistRef" refer="artistKey">
+            <xs:selector xpath="ref"/>
+            <xs:field xpath="@aid"/>
+        </xs:keyref>
+        <xs:keyref name="tagRef" refer="tagKey">
+            <xs:selector xpath="tags"/>
+            <xs:field xpath="t"/>
+        </xs:keyref>
+    </xs:element>
+</xs:schema>

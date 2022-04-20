@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<art xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="art.xsd">
+    <artists>
+        <artist aid="1">
+            <name>Banksy</name>
+            <lived from="1974-01-01" birthplace="Bristol"/>
+            <tags>
+                <t>modernart</t>
+                <t>banksyplace</t>
+            </tags>
+        </artist>
+        <artist aid="2">
+            <name>Claude Monet</name>
+            <lived from="1840-11-14" to="1926-12-05" birthplace="Paris"/>
+            <tags>
+                <t>impressionism</t>
+                <t>france</t>
+            </tags>
+        </artist>
+        <artist aid="3">
+            <name>Gustav Klimt</name>
+            <lived from="1862-07-14" to="1918-02-06" birthplace="Wien"/>
+            <tags>
+                <t>artnouveau</t>
+            </tags>
+        </artist>
+    </artists>
+    <objects>
+        <object>
+            <title>Love is in the Bin</title>
+            <kind>
+                <painting paint="Acrylic" on="paper"/>
+            </kind>
+            <label>
+                Das ursprüngliche Gemälde von <by>Banksy</by> entstand im Jahr <year>2006</year>.
+                Im Jahr <year>2018</year> wurde es über das Auktionshaus Sotheby's
+                an eine europäische Bieterin verkauft und unmittelbar nach dem Kauf
+                vor den Augen aller Anwesenden durch einen im Rahmen versteckten 
+                Schredder zur Hälfte in schmale Streifen geschnitten.
+            </label>
+            <catalog>AA-000-a1</catalog>
+            <tags>
+                <t>Graffity</t>
+            </tags>
+        </object>
+        <object>
+            <title>The Mild Mild West</title>
+            <kind>
+                <painting paint="Acrylic" on="wall"/>
+            </kind>
+            <label>
+                <by>Banksy</by> drew the artwork over three days in broad daylight in <year>1999</year>.
+            </label>
+            <catalog>BB-001-a2</catalog>
+            <tags>
+                <t>Graffity</t>
+            </tags>
+        </object>
+        <object>
+            <title>Impression, Sonnenaufgang</title>
+            <kind>
+                <painting paint="Oil" on="canvas"/>
+            </kind>
+            <label>
+                Impression, Sonnenaufgang ist ein Seestück des 
+                französischen Malers <by>Claude Monet</by> aus dem Jahr
+                <year>1872</year>, das der Stilrichtung
+                <ref aid="2">Impressionismus</ref> ihren Namen gab.
+            </label>
+            <catalog>CC-005-z2</catalog>
+            <tags>
+                <t>impressionism</t>
+            </tags>
+        </object>
+        <object>
+            <title>The Three ages of woman</title>
+            <kind>
+                <sculpture material="stone"/>
+            </kind>
+            <label>
+                <ref aid="3">The Three Ages of Woman</ref> is a sculpture that was 
+                completed in Austria in <year>1905</year> by <by>Gustav Klimt</by>,
+                symbolist painter and one of the most prominent 
+                members of the Vienna Secession movement.
+                Tree
+            </label>
+            <catalog>CC-002-a3</catalog>
+            <tags>
+                <t>klimtplace</t>
+            </tags>
+        </object>
+        <object>
+            <title>Der Kuss</title>
+            <kind>
+                <sculpture material="bronze"/>
+            </kind>
+            <label>
+                <ref aid="3">Der Kuss</ref> von <year>1907</year>-<year>1908</year> ist eines der bedeutendsten
+                Werke von <by>Gustav Klimt</by> und ebenso der Malerei
+                des Jugendstils. Es gilt zudem als das berühmteste Gemälde 
+                des Malers, da es durch Reproduktionen in vielerlei 
+                Form weit verbreitet wurde.
+                Tree
+            </label>
+            <catalog>CC-002-a3</catalog>
+            <tags>
+                <t>artnouveau</t>
+            </tags>
+        </object>
+        <object>
+            <title>Love is in the Bin</title>
+            <kind>
+                <painting paint="Acrylic" on="paper"/>
+            </kind>
+            <label>
+                Das ursprüngliche Gemälde von <by>Banksy</by> entstand im Jahr <year>1999</year>.
+                Im Jahr <year>1999</year> wurde es über das Auktionshaus Sotheby's
+                an eine europäische Bieterin verkauft und unmittelbar nach dem Kauf
+                vor den Augen aller Anwesenden durch einen im Rahmen versteckten
+                Schredder zur Hälfte in schmale Streifen geschnitten.
+            </label>
+            <catalog>AA-000-a3</catalog>
+            <tags>
+                <t>Graffity</t>
+            </tags>
+        </object>
+        <object>
+            <title>The Mild Mild West</title>
+            <kind>
+                <painting paint="Acrylic" on="wall"/>
+            </kind>
+            <label>
+                <by>Banksy</by> drew the artwork over three days in broad daylight in <year>1999</year>.
+            </label>
+            <catalog>BB-001-g6</catalog>
+            <tags>
+                <t>Graffity</t>
+            </tags>
+        </object>
+        <object>
+            <title>Impression, Sonnenaufgang</title>
+            <kind>
+                <painting paint="Oil" on="canvas"/>
+            </kind>
+            <label>
+                Impression, Sonnenaufgang ist ein Seestücko des
+                französischen Malers <by>Banksy</by> aus dem Jahr
+                <year>1999</year>, das der Stilrichtung
+                <ref aid="2">Impressionismus</ref> ihren Namen gab.
+            </label>
+            <catalog>CC-005-y2</catalog>
+            <tags>
+                <t>impressionism</t>
+            </tags>
+        </object>
+        <object>
+            <title>Noch ein Titel</title>
+            <kind>
+                <painting paint="Oil" on="canvas"/>
+            </kind>
+            <label>
+                Impression, Sonnenaufgang ist ein Seestück des
+                französischen Malers <by>Banksy</by> aus dem Jahr
+                <year>1999</year>, das der Stilrichtung
+                <ref aid="2">Impressionismus</ref> ihren Namen gab.
+            </label>
+            <catalog>CC-005-z2</catalog>
+            <tags>
+                <t>impressionism</t>
+            </tags>
+        </object>
+        <object>
+            <title>The Three ages of woman</title>
+            <kind>
+                <sculpture material="stone"/>
+            </kind>
+            <label>
+                <ref aid="3">The Three Ages of Woman</ref> is a sculpture that was
+                completed in Austria in <year>1908</year> by <by>Claude Monet</by>,
+                symbolist painter and one of the most prominent
+                members of the Vienna Secession movement.
+                Tree
+            </label>
+            <catalog>CC-002-z3</catalog>
+            <tags>
+                <t>klimtplace</t>
+            </tags>
+        </object>
+        <object>
+            <title>Der Kuss</title>
+            <kind>
+                <sculpture material="bronze"/>
+            </kind>
+            <label>
+                <ref aid="3">Der Kuss</ref> von <year>1908</year> ist eines der bedeutendsten
+                Werke von <by>Claude Monet</by> und ebenso der Malerei
+                des Jugendstils. Es gilt zudem als das berühmteste Gemälde
+                des Malers, da es durch Reproduktionen in vielerlei
+                Form weit verbreitet wurde.
+                Tree
+            </label>
+            <catalog>CC-002-c3</catalog>
+            <tags>
+                <t>artnouveau</t>
+            </tags>
+        </object>
+        <object>
+            <title>Noch ein Werk!</title>
+            <kind>
+                <sculpture material="bronze"/>
+            </kind>
+            <label>
+                <ref aid="3">Der Kuss</ref> von <year>1908</year> ist eines der bedeutendsten
+                Werke von <by>Claude Monet</by> und ebenso der Malerei
+                des Jugendstils. Es gilt zudem als das berühmteste Gemälde
+                des Malers, da es durch Reproduktionen in vielerlei
+                Form weit verbreitet wurde.
+                Tree
+            </label>
+            <catalog>CC-002-a7</catalog>
+            <tags>
+                <t>artnouveau</t>
+            </tags>
+        </object>
+        <object>
+            <title>Der Baum</title>
+            <kind>
+                <sculpture material="bronze"/>
+            </kind>
+            <label>
+                <ref aid="3">Der Kuss</ref> von <year>1908</year> ist eines der bedeutendsten
+                Werke von <by>Claude Monet</by> und ebenso der Malerei
+                des Jugendstils. Es gilt zudem als das berühmteste Gemälde
+                des Malers, da es durch Reproduktionen in vielerlei
+                Form weit verbreitet wurde.
+                Tree
+            </label>
+            <catalog>CC-002-a4</catalog>
+            <tags>
+                <t>artnouveau</t>
+            </tags>
+        </object>
+        <object>
+            <title>Das Bild</title>
+            <kind>
+                <sculpture material="bronze"/>
+            </kind>
+            <label>
+                <ref aid="3">Der Kuss</ref> von <year>1908</year> ist eines der bedeutendsten
+                Werke von <by>Claude Monet</by> und ebenso der Malerei
+                des Jugendstils. Es gilt zudem als das berühmteste Gemälde
+                des Malers, da es durch Reproduktionen in vielerlei
+                Form weit verbreitet wurde.
+                Tree
+            </label>
+            <catalog>CC-002-a9</catalog>
+            <tags>
+                <t>artnouveau</t>
+            </tags>
+        </object>
+    </objects>
+    <tags>
+        <tag tagname="impressionism">Impressionism</tag>
+        <tag tagname="modernart">Moderne Kunst</tag>
+        <tag tagname="artnouveau">Jugendstil</tag>
+        <tag tagname="france">Frankreich</tag>
+        <tag tagname="klimtplace">Österreich</tag>
+        <tag tagname="banksyplace">England</tag>
+    </tags>
+</art>
+

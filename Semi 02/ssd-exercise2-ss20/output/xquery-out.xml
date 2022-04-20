@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<busyYearsForArtists>
+    <artist name="Banksy" year="1999">
+        <objectCount>5</objectCount>
+        <object>Love is in the Bin</object>
+        <object>The Mild Mild West</object>
+        <object>Love is in the Bin</object>
+    </artist>
+    <artist name="Claude Monet" year="1908">
+        <objectCount>5</objectCount>
+        <object>Impression, Sonnenaufgang</object>
+        <object>The Three ages of woman</object>
+        <object>Der Kuss</object>
+    </artist>
+</busyYearsForArtists>
